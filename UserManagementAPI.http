@@ -1,0 +1,38 @@
+@UserManagementAPI_HostAddress = http://localhost:5051
+
+### Get all users (requires authentication)
+GET {{UserManagementAPI_HostAddress}}/api/usermanagement
+Authorization: Bearer valid-token-123
+
+### Get user by ID
+GET {{UserManagementAPI_HostAddress}}/api/usermanagement/1
+Authorization: Bearer valid-token-123
+
+### Create new user
+POST {{UserManagementAPI_HostAddress}}/api/usermanagement
+Content-Type: application/json
+Authorization: Bearer valid-token-123
+
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "department": "IT"
+}
+
+### Update user
+PUT {{UserManagementAPI_HostAddress}}/api/usermanagement/1
+Content-Type: application/json
+Authorization: Bearer valid-token-123
+
+{
+  "name": "John Smith",
+  "email": "john.smith@example.com",
+  "department": "HR"
+}
+
+### Delete user
+DELETE {{UserManagementAPI_HostAddress}}/api/usermanagement/1
+Authorization: Bearer valid-token-123
+
+### Test unauthorized access
+GET {{UserManagementAPI_HostAddress}}/api/usermanagement
