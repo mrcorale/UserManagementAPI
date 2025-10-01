@@ -18,7 +18,6 @@ A robust ASP.NET Core Web API for managing users with comprehensive authenticati
 
 **ALL API ENDPOINTS REQUIRE AUTHENTICATION** except:
 - Swagger UI (`/swagger`)
-- WeatherForecast endpoint (`/weatherforecast`)
 
 ### 🔑 How to Authenticate
 
@@ -88,7 +87,6 @@ All endpoints require authentication unless specified otherwise.
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | `GET` | `/swagger` | Swagger UI documentation |
-| `GET` | `/weatherforecast` | Sample weather endpoint |
 
 ## 🛠️ Setup & Installation
 
@@ -248,5 +246,6 @@ For issues related to:
 - **API Access**: Ensure proper endpoint URLs and headers
 
 ## 📄 License
+
 
 This project is developed for educational purposes as part of the TechHive Solutions internal tools development.
